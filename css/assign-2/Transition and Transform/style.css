@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+h1{
+    position: absolute;
+    top: 0;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s;
+}
+
+div:hover{
+    transform: scale(2) rotate(45deg);
+}
