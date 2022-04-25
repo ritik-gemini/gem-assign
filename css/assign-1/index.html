@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Assignment-1</title>
+</head>
+<body>
+    <div id="header-box">
+        <div id="header">
+            <h1>Student Registration Form</h1>
+        </div>
+    </div>
+
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter full name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fatherName">Father's Name:</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="motherName">Mother's Name:</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pno">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="tel" placeholder="017xxxxxxxx">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="xyz@example.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="31">
+                    <span>-</span>
+                    <input type="number" min="1" max="12">
+                    <span>-</span>
+                    <input type="number" min="1950" max="2100">
+                    <span>(dd-mm-yyyy)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Street:-   House:-   Road:-">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bg">Blood Group:</label>
+                </td>
+                <td>
+                    <select name="bg">
+                        <option value="A+">select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="department">Department:</label>
+                </td>
+                <td>
+                    <input type="radio" name="department" id="cse">
+                    <label for="cse">CSE</label>
+                    <input type="radio" name="department" id="eee">
+                    <label for="eee">EEE</label>
+                    <input type="radio" name="department" id="bba">
+                    <label for="bba">BBA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="course" id="c">
+                    <label for="c">C</label>
+                    <input type="checkbox" name="course" id="cpp">
+                    <label for="cpp">C++</label>
+                    <input type="checkbox" name="course" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="course" id="ai">
+                    <label for="ai">AI</label>
+                    <input type="checkbox" name="course" id="ml">
+                    <label for="ml">Machine Learning</label>
+                    <input type="checkbox" name="course" id="robotics">
+                    <label for="robotics">Robotics</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Photo:</label>
+                </td>
+                <td>
+                    <input type="file" name="photo" id="photo">
+                </td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                </td>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h2 class="prop">
+        A static table to display 3 records - columns (SNo, Name, Phone no, Gender, City, Hobbies(hobbies will span over multiple rows))
+    </h2>
+    <table id="tab">
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Phone No.</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Hobbies</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>ABC</td>
+          <td>424232323</td>
+          <td>Male</td>
+          <td>Delhi</td>
+          <td rowspan="2">singing</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>XYZ</td>
+          <td>76232323</td>
+          <td>Male</td>
+          <td>Mathura</td>
+          <!-- <td>Dancing</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>UVW</td>
+          <td>98232323</td>
+          <td>Female</td>
+          <td>Mumbai</td>
+          <td>Swimming</td>
+        </tr>
+      </table>
+    <div>
+        <h2 class="prop">
+          Sample demo demonstrating position, float, display and visibility
+          concepts.
+        </h2>
+        <h2 id="pos">Positioning Properties:</h2>
+
+        <h3>1. Static:</h3>
+        <p class="position">
+            HTML elements are positioned static by default.
+            Static positioned elements are not affected by the top, bottom, left, and right properties.
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page. 
+            <br><br>
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+        </p>
+
+        <h3>2. Relative:</h3>
+        <p class="position">
+            An element with position: relative; is positioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. 
+            <br><br>
+            <div class="box" id="box4"></div>
+          <div class="box" id="box5"></div>
+          <div class="box" id="box6"></div>
+        </p>
+
+        <h3>3. Absolute:</h3>
+        <p class="position">
+            An element with the absolute position will move according to the position of its parent element.<br>
+            In the absence of any parent element, the HTML element will be placed relative to the page.
+            <div class="box" id="box7"></div>
+          <div class="box" id="box8"></div>
+          <div class="box" id="box9"></div>
+        </p>
+
+        <h3>4. Fixed:</h3>
+        <p class="position">
+            An element with position:fixed will remain stuck to a specific position even after the page is scrolled.<br>
+            This position property is used when we want to keep an HTML element at a fixed spot no matter where on the page the user is.
+            <p id="fixed">"The header section is perfect example of 'Fixed' positioning"</p>
+        </p>
+
+        <h3>5. Sticky:</h3>
+        <div class="container">
+            <header class="header">header</header>
+          
+            <div class="content">
+              <div class="main">main</div>
+              <div class="side">Sticky Block</div>
+            </div>
+          
+            <footer class="footer">footer</footer>
+          </div>
+
+        <h2 id="flo">Float Properties:</h2><br>
+
+        <h3>1. Left- The elements floats to the left of its container.<br><br>
+            2. Right- The elements floats to the right of its container.<br><br>
+            3. None- The element does not float (it will be displayed just where it occurs in the text). This is default.<br><br>
+            4. Inherit- The element inherits the float value of its parent.</h3><br><br>
+
+            <div class="square">
+                <div id="square1"></div>
+                <div id="square2"></div>
+                <div id="square3"></div>
+            </div>
+            <br><br>
+            <hr>
+         <h2 id="dis">Display Properties: </h2>   
+         <h3>1. display: inline -->The inline element takes the required width only. It doesn't force the line break so the flow of text doesn't break in inline example.<br><br>
+             2. display: inline-block -->The CSS display inline-block element is very similar to inline element but the difference is that you are able to set the width and height.<br><br>
+             3. display: block -->The CSS display block element takes as much as horizontal space as they can. Means the block element takes the full available width. They make a line break before and after them.<br><br>
+             4. display: none-->The "none" value totally removes the element from the page. It will not take any space.</h3><br>
+             <hr>
+             <h2 id="dis">Visibility: </h2>   
+             <h3>1. Visibility: hidden<br>
+                <p id="vanished">This paragraph is not visible!</p>
+                 2. Visibility: visible
+                <p id="visible">This paragraph is visible!</p>
+                 </h3>
+      </div>
+</body>
+</html>
